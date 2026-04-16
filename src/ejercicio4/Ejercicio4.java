@@ -2,6 +2,7 @@ package ejercicio4;
 
 import javax.net.ssl.ExtendedSSLSession;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
@@ -24,10 +25,15 @@ public class Ejercicio4 {
         Ejercicio4.ingresarAsignaturas(estudiante1,asignaturas);
 
         System.out.println(estudiante1.getTodas());
+        System.out.println("antes");
+        System.out.println(estudiante1.getAsignaturasAprobadas());
+        System.out.println(estudiante1.getAsignaturasPendientes());
+        System.out.println("despues");
 
-        estudiante1.getAsignaturasPendientes().stream().
+        cambiarSuspenso(estudiante1);
 
-
+        System.out.println(estudiante1.getAsignaturasAprobadas());
+        System.out.println(estudiante1.getAsignaturasPendientes());
 
     }
 
@@ -42,5 +48,12 @@ public class Ejercicio4 {
                 estudiante.asignaturasPendientes.add(asignatura);
             }
         }
+    }
+
+    public static void cambiarSuspenso(Estudiante estudiante) {
+        List<String> lista = estudiante.getAsignaturasPendientes().stream().toList();
+
+        estudiante.asignaturasPendientes.remove(lista.get(0));
+        estudiante.asignaturasAprobadas.add(lista.get(0));
     }
 }
