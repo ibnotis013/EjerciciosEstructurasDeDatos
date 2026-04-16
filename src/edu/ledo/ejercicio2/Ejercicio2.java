@@ -3,7 +3,7 @@ package edu.ledo.ejercicio2;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ejercicio2 {
+public class Ejercicio2 {
     static void main() {
 
         List<Integer> lista = new ArrayList<Integer>();
