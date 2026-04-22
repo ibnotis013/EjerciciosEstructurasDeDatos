@@ -1,4 +1,4 @@
-package ejercicio4;
+package edu.ledo.ejercicio4;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -15,7 +15,7 @@ public class Estudiante {
     }
 
     public void cursarAsignaturas(String asignatura, boolean aprobada) {
-
+        //en el ejercicio4 al comenzar estudiando el otro caso nos queda una estructura de control mas resumida
         if (asignaturasAprobadas.contains(asignatura)) {
             System.out.println("ya se ha cursado esta asignatura");
         }

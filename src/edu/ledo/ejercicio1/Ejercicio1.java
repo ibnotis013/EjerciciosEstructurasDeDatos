@@ -8,15 +8,15 @@ public class Ejercicio1 {
     static void main() {
 
         Scanner sc = new Scanner(System.in);
-        Set<String> lista = new HashSet<String>();
+        Set<String> conjunto = new HashSet<String>();
 
         for (int i= 1; i<=3;i++) {
             System.out.println("introduce la palabra "+i);
             String palabra = sc.nextLine();
-            lista.add(palabra);
+            conjunto.add(palabra);
         }
 
-        for (String palabra : lista) {
+        for (String palabra : conjunto) {
             System.out.println(palabra);
         }
 

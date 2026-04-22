@@ -1,15 +1,12 @@
-package ejercicio4;
+package edu.ledo.ejercicio5;
 
-import javax.net.ssl.ExtendedSSLSession;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Random;
-import java.util.Set;
+import java.util.*;
 
-public class Ejercicio4 {
+/*public class Ejercicio5 {
     static void main() {
 
-        Set<String> asignaturas = new HashSet<String>();
+        Set<String> asignaturas=new HashSet<>();
+
         asignaturas.add("Ingles");
         asignaturas.add("Programacion");
         asignaturas.add("Sistemas");
@@ -22,7 +19,7 @@ public class Ejercicio4 {
 
         System.out.println(asignaturas);
 
-        Ejercicio4.ingresarAsignaturas(estudiante1,asignaturas);
+        Ejercicio5.ingresarAsignaturas(estudiante1,asignaturas);
 
         System.out.println(estudiante1.getTodas());
         System.out.println("antes");
@@ -37,8 +34,8 @@ public class Ejercicio4 {
 
     }
 
-    public static void ingresarAsignaturas(Estudiante estudiante,Set<String> asignaturas) {
-        for (String asignatura : asignaturas) {
+    public static void ingresarAsignaturas(Estudiante estudiante, Map notas) {
+        for (String asignatura : ) {
             Random random = new Random();
             boolean valorAleatorio = random.nextBoolean();
             if (valorAleatorio) {
@@ -57,3 +54,4 @@ public class Ejercicio4 {
         estudiante.asignaturasAprobadas.add(lista.get(0));
     }
 }
+*/

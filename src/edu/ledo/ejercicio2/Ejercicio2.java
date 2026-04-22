@@ -16,19 +16,17 @@ public class Ejercicio2 {
         lista.add(5);
         lista.add(7);
         System.out.println("Lista de numeros");
-        int numerosTotal = 0;
         int sumaNumeros=0;
         int numeroMayor=lista.get(0);
-        for (Integer numeros: lista) {
-            System.out.println(numeros);
-            numerosTotal ++;
-            sumaNumeros += numeros;
-            if (numeroMayor<=numeros){
-                numeroMayor=numeros;
+        for (Integer numero: lista) {
+            System.out.println(numero);
+            sumaNumeros += numero;
+            if (numeroMayor<=numero){
+                numeroMayor=numero;
             }
         }
 
-        System.out.println(numerosTotal);
+        System.out.println(lista.size());
         System.out.println(sumaNumeros);
         System.out.println(numeroMayor);
 
